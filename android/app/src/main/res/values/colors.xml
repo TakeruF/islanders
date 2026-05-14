@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0A0A0C</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#7CFFB5</color>
+
+    <color name="island_bg">#0A0A0C</color>
+    <color name="island_fg">#F4F4F5</color>
+    <color name="island_accent">#7CFFB5</color>
+    <color name="island_warn">#FFB454</color>
+    <color name="island_alert">#FF5A5F</color>
+</resources>

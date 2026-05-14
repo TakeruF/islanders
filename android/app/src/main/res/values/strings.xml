@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Islanders</string>
+    <string name="title_activity_main">Islanders</string>
+    <string name="package_name">com.islanders.app</string>
+    <string name="custom_url_scheme">com.islanders.app</string>
+
+    <string name="channel_charging_id">island_charging</string>
+    <string name="channel_charging_name">充電モニター</string>
+    <string name="channel_thermal_id">island_thermal</string>
+    <string name="channel_thermal_name">システム熱状態</string>
+    <string name="channel_calculator_id">island_calculator</string>
+    <string name="channel_calculator_name">計算機スニペット</string>
+    <string name="channel_currency_id">island_currency</string>
+    <string name="channel_currency_name">レート換算</string>
+</resources>

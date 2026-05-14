@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html, body { background: #0a0a0c; }
+
+.island-shell {
+  background: linear-gradient(180deg, #161618 0%, #0d0d10 100%);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.capsule-shell {
+  background: #0d0d10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.metric-bar {
+  background: linear-gradient(90deg, var(--bar-color, #7cffb5) 0%, var(--bar-color-2, #4af8a3) 100%);
+}
