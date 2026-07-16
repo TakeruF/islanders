@@ -7,6 +7,10 @@ out
 .env*
 !.env.example
 
+# Editors
+.idea/
+.vscode/
+
 # Android
 android/.gradle
 android/build
