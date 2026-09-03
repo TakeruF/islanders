@@ -2,6 +2,7 @@
 
 import { useIsland } from "@/services/IslandManager";
 import { classifyProtocol, formatWatts } from "@/lib/chargingProtocol";
+import { Zap } from "lucide-react";
 import { IslandShell } from "./IslandShell";
 
 export function ChargingMonitor() {
@@ -62,11 +63,7 @@ function Metric({ label, value }: { label: string; value: string }) {
 }
 
 function BoltIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current" aria-hidden>
-      <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
-    </svg>
-  );
+  return <Zap className="h-3.5 w-3.5" strokeWidth={2.25} aria-hidden />;
 }
 
 function BatteryRing({ level, accent }: { level: number; accent: string }) {

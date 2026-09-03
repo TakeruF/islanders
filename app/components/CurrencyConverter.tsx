@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { CircleDollarSign } from "lucide-react";
 import { useIsland } from "@/services/IslandManager";
 import { startCurrencyLoop, stopCurrencyLoop } from "@/services/CurrencyService";
 import { IslandShell } from "./IslandShell";
@@ -85,9 +86,5 @@ function PairInput({
 }
 
 function CurrencyIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current" aria-hidden>
-      <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm.5 5v1.2c1.7.2 2.8 1.1 2.9 2.4h-1.6c-.1-.6-.7-1-1.5-1.1V12c2 .3 3.2 1.1 3.2 2.6 0 1.5-1.2 2.5-3.2 2.7V19h-1v-1.7c-1.9-.2-3.1-1.2-3.2-2.7H9.7c.1.7.8 1.2 1.8 1.3v-2.6c-1.9-.3-3-1.1-3-2.5C8.5 9.4 9.6 8.5 11.5 8.2V7h1zm0 8.7c1 .1 1.7-.3 1.7-1.1 0-.7-.6-1.1-1.7-1.3v2.4zm-1-4.4V9.5c-1 .1-1.6.5-1.6 1.2 0 .6.5 1 1.6 1.2z" />
-    </svg>
-  );
+  return <CircleDollarSign className="h-3.5 w-3.5" strokeWidth={2.25} aria-hidden />;
 }

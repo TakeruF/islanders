@@ -1,6 +1,7 @@
 "use client";
 
 import { useIsland } from "@/services/IslandManager";
+import { Thermometer } from "lucide-react";
 import { IslandShell } from "./IslandShell";
 
 const STATUS_LABEL = [
@@ -80,9 +81,5 @@ function Metric({ label, value }: { label: string; value: string }) {
 }
 
 function ThermoIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current" aria-hidden>
-      <path d="M12 2a3 3 0 00-3 3v9.17a5 5 0 106 0V5a3 3 0 00-3-3zm0 18a3 3 0 01-1-5.83V5a1 1 0 112 0v9.17A3 3 0 0112 20z" />
-    </svg>
-  );
+  return <Thermometer className="h-3.5 w-3.5" strokeWidth={2.25} aria-hidden />;
 }

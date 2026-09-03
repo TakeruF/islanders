@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Calculator } from "lucide-react";
 import { useIsland } from "@/services/IslandManager";
 import { pushCalculation } from "@/services/CalculatorService";
 import { IslandShell } from "./IslandShell";
@@ -59,9 +60,5 @@ export function CalculatorSnippet() {
 }
 
 function CalcIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current" aria-hidden>
-      <path d="M6 2h12a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm1 3v3h10V5H7zm0 5v2h2v-2H7zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v2h1v-2h-1zM7 13v2h2v-2H7zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v6h1v-6h-1zM7 16v2h2v-2H7zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2z" />
-    </svg>
-  );
+  return <Calculator className="h-3.5 w-3.5" strokeWidth={2.25} aria-hidden />;
 }
